@@ -1,0 +1,60 @@
+@import "_seccion1.scss";
+
+@mixin titulos{
+    color: rgb(255, 255, 255);
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8vh;
+    text-align: justify;
+    margin-left: 5%;
+    padding-top: 20%;
+    padding-bottom: 40%;
+}
+
+
+@mixin fondo{
+    
+        background: linear-gradient(45deg, #00e1f1, #02869d,#03799d,#15f9f1);
+        background-size: 300% 300%;
+        animation: color 20s ease-in-out infinite;
+
+@keyframes color{
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+}
+
+@mixin lasp{
+    font-family: monospace;
+    color: white;
+   
+    font-size: 3vh;
+    font-family: monospace;
+    margin: 5%;
+}
+
+@mixin footer{
+    background-color: black;
+    text-align: center;
+    width: 100%;
+    font-size: 2vh;
+    font-family: monospace;
+}
+
+p{
+    @include lasp()
+}
+
+footer{
+    @include footer()
+}
+
+body{
+    @include fondo()
+}
