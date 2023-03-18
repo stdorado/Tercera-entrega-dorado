@@ -1,4 +1,11 @@
 @import "_seccion1.scss";
+@import "_portafolio.scss";
+@import "_servicios.scss";
+
+
+
+
+
 
 @mixin titulos{
     color: rgb(255, 255, 255);
@@ -9,13 +16,11 @@
     padding-top: 20%;
     padding-bottom: 40%;
 }
-
-
 @mixin fondo{
     
-        background: linear-gradient(45deg, #00e1f1, #02869d,#03799d,#15f9f1);
+        background: linear-gradient(45deg, #d9f926, #f8cf06,#ef8c2a,#e8670c);
         background-size: 300% 300%;
-        animation: color 20s ease-in-out infinite;
+        animation: color 10s ease-in-out infinite;
 
 @keyframes color{
     0%{
@@ -29,16 +34,6 @@
     }
 }
 }
-
-@mixin lasp{
-    font-family: monospace;
-    color: white;
-   
-    font-size: 3vh;
-    font-family: monospace;
-    margin: 5%;
-}
-
 @mixin footer{
     background-color: black;
     text-align: center;
@@ -47,10 +42,29 @@
     font-family: monospace;
 }
 
-p{
-    @include lasp()
+@mixin navbar{
+    display: inline-block;
+    font-size: 3vh;
+    font-family: monospace;
+    width: 100%;
+    padding: 2%;
+    
+
+    ul{
+        padding: 2%;
+        margin: 2%;
+        
+    }
+
+    a:hover{
+        color: rgb(255, 255, 255);
+        background-color: rgb(0, 0, 0);
+    }
 }
 
+.navbar{
+    @include navbar()
+}
 footer{
     @include footer()
 }
@@ -58,3 +72,4 @@ footer{
 body{
     @include fondo()
 }
+
