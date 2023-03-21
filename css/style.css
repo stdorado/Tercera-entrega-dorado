@@ -27,7 +27,7 @@ h2 {
   position: relative;
   padding: 1%;
   text-decoration: none;
-  background-color: rgb(18, 32, 81);
+  background-color: rgb(9, 18, 50);
   overflow: hidden;
   z-index: 1;
   border-radius: 5vh;
@@ -40,7 +40,7 @@ h2 {
   height: 200%;
   left: 0;
   top: -200%;
-  background-color: rgb(198, 32, 32);
+  background-color: rgb(77, 252, 135);
   border-radius: 50%;
   transition: all 0.6s ease;
   z-index: -1;
@@ -84,6 +84,34 @@ ul li {
   font-size: 3vh;
 }
 
+h1 {
+  margin-bottom: 8%;
+  margin-top: 2%;
+}
+
+label {
+  color: #000000;
+}
+
+.enviar {
+  color: white;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  width: 80%;
+  background: linear-gradient(to right, rgb(12, 159, 218), rgb(10, 153, 115), rgb(86, 10, 187));
+}
+
+.card {
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-bottom: 10%;
+}
+
+.bg {
+  background: linear-gradient(to right, rgb(11, 108, 173), rgb(18, 150, 150));
+}
+
 .navbar {
   display: inline-block;
   font-size: 3vh;
@@ -109,9 +137,9 @@ footer {
 }
 
 body {
-  background: linear-gradient(45deg, #d9f926, #f8cf06, #ef8c2a, #e8670c);
+  background: linear-gradient(45deg, #0eecc3, #0e9ed7, #5e9aee, #46ebc4);
   background-size: 300% 300%;
-  animation: color 10s ease-in-out infinite;
+  animation: color 6s ease-in-out infinite;
 }
 @keyframes color {
   0% {

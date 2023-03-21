@@ -1,6 +1,7 @@
 @import "_seccion1.scss";
 @import "_portafolio.scss";
 @import "_servicios.scss";
+@import "_formulario.scss";
 
 
 
@@ -18,9 +19,9 @@
 }
 @mixin fondo{
     
-        background: linear-gradient(45deg, #d9f926, #f8cf06,#ef8c2a,#e8670c);
+        background: linear-gradient(45deg, #0eecc3, #0e9ed7,#5e9aee,#46ebc4);
         background-size: 300% 300%;
-        animation: color 10s ease-in-out infinite;
+        animation: color 6s ease-in-out infinite;
 
 @keyframes color{
     0%{
